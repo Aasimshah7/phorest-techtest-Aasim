@@ -6,7 +6,7 @@ from src.data_loader import DataLoader
 
 @pytest.fixture
 def db():
-    db_path = "test_loader.db"
+    db_path = "test_data_loader.db"
     # Clean up before creating
     if os.path.exists(db_path):
         try:
@@ -20,7 +20,6 @@ def db():
                 pass
     db = Database(db_path)
     yield db
-    # No cleanup here since we handle it upfront
 
 def test_load_all_data(db):
     loader = DataLoader(db, "data")

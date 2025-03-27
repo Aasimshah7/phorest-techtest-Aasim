@@ -19,7 +19,6 @@ def db():
                 pass
     db = Database(db_path)
     yield db
-    # No cleanup here since we handle it upfront
 
 def test_table_creation(db):
     with db.get_connection() as conn:

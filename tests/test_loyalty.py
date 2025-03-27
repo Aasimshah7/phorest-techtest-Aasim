@@ -7,7 +7,7 @@ from src.loyalty import LoyaltyAnalyzer
 
 @pytest.fixture
 def db():
-    db_path = "test.db"
+    db_path = "test_loyalty.db"
     
     # Ensure any existing database file is removed before creating a new one
     if os.path.exists(db_path):
