@@ -98,7 +98,7 @@ python -m pytest tests/ -v
 
 ## Notes
 - **Design Choices**:
-  - SQLite chosen for ease of use; a production system might use PostgreSQL for scalability.
+  - SQLite chosen for ease of use; a production system might use MySQL for its widespread adoption or Oracle for enterprise-grade features and scalability.
   - `src/` is a Python package with `__init__.py` for proper module organization and import reliability.
 - **Potential Improvements**:
   - Add try-except blocks for file operations and database errors.
